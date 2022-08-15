@@ -161,4 +161,3 @@ function handleDelete() {
     currentDisplayNumber.textContent = previousNum;
   }
 }
-
