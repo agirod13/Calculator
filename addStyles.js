@@ -30,7 +30,7 @@ currentNumberClass
     .forEach((cls) => currentNumber.classList.add(cls));
 
 const buttons = document.querySelectorAll("button");
-buttons.forEach((btn) => {
+buttons.forEach((btn) => { 
     addClasses(btn);
 });
 
