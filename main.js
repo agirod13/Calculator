@@ -140,4 +140,21 @@ function handleKeyPress(e){
     if(e.key === "."){
         addDecimal();
     }
+    if(e.key === "Backspace") {
+        handleDelete();
+    }
+};
+
+function handleDelete () {
+    if (currentNum != "") {
+        currentNum = currentNum.slice(0, -1);        
+        currentDisplayNumber.textContent = currentNum;
+        if (currentNum === "") {
+            currentDisplayNumber.textContent = "0";
+        }
+    }
+    if(currentNum === "" && previousNum !== "" && operator === "") {
+        previousNum = previousNum.slice(0,-1);
+        currentDisplayNumber.textContent = previousNum;
+    }
 };
